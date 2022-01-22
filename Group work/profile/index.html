@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="back">&#8592;</div>
+    <div class="container">
+        <div class="main">
+            <div id="author">
+                <img src="./images/author.jpg" alt="">
+                <h2>Marry Ann</h2>
+            </div>
+            <div id="mybox">
+                <ul class="product">
+                    <li>
+                        <img src="./images/word.jpg" alt="">
+                        <h2>All Rounder</h2>
+                        <div class="info">Worked on over 8 subjects</div>
+                    </li>
+                    <li>
+                        <img src="./images/word.jpg" alt="">
+                        <h2>The Scientist</h2>
+                        <div class="info">Finish 100 questions of different science subjects</div>
+                    </li>
+
+                    <li>
+                        <img src="./images/word.jpg" alt="">
+                        <h2>Persevering</h2>
+                        <div class="info">Continuous login for a week</div>
+                    </li>
+                    <li>
+                        <img src="./images/word.jpg" alt="">
+                        <h2>History Buffs</h2>
+                        <div class="info">Finish 50 history questions</div>
+                    </li>
+                </ul>
+                <ul class="product" style="margin:0px;">
+                    <li>
+                        <img src="./images/word.jpg" alt="">
+                        <h2>All Rounder</h2>
+                        <div class="info">Worked on over 8 subjects</div>
+                    </li>
+                    <li>
+                        <img src="./images/word.jpg" alt="">
+                        <h2>The Scientist</h2>
+                        <div class="info">Finish 100 questions of different science subjects</div>
+                    </li>
+
+                    <li>
+                        <img src="./images/word.jpg" alt="">
+                        <h2>Persevering</h2>
+                        <div class="info">Continuous login for a week</div>
+                    </li>
+                    <li>
+                        <img src="./images/word.jpg" alt="">
+                        <h2>History Buffs</h2>
+                        <div class="info">Finish 50 history questions</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="more">
+                <a href="javascript:void(0)">More badges</a>
+            </div>
+
+        </div>
+
+        <div>
+            <button id="startbutton"></button>
+            <div class="startcard">START!</div>
+        </div>  
+        <footer>
+            <div id="footbox">
+                <div class="box">
+                    <button id="profile" style="z-index: 1;"></button>
+                    <div class="card">Profile</div>
+                </div>
+                <div class="box">
+                    <button id="quizsheet"></button>
+                    <div class="card">Notebook</div>
+                </div>
+            </div>
+            <script src="java.js"></script>
+        </footer>
+
+    </div>
+    
+
+    <script>
+        var flag = true;
+        var more = document.getElementById("more");
+        more.onclick = function() {
+
+            var product = document.getElementsByClassName("product");
+            if (flag) {
+                product[0].style.transform = "translateY(-100%)";
+                product[0].style.transition = "1s all linear";
+
+                product[1].style.transform = "translateY(-105%)";
+                product[1].style.transition = "1s all linear";
+            } else {
+                product[0].style.transform = "translateY(0%)";
+                product[0].style.transition = "1s all linear";
+
+                product[1].style.transform = "translateY(0%)";
+                product[1].style.transition = "1s all linear";
+            }
+
+            flag = !flag;
+        }
+        let startbutton = document.querySelector("#startbutton");
+        startbutton.addEventListener("click", event=>{
+            location.href = "../ProblemPage/Problem.html";
+        })
+        let quizsheet = document.querySelector("#quizsheet");
+        quizsheet.addEventListener("click", event=>{
+            location.href = "../memo/memo.html"
+        })
+        let back = document.querySelector("#back");
+        back.addEventListener("click",event=>{
+            location.href = "../mainpage/main.html";
+        })
+
+    </script>
+
+</body>
+
+</html>

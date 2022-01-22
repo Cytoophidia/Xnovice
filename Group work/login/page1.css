@@ -1,30 +1,31 @@
 body{
     margin: 0;
     padding: 0;
+    height: 100vh;
     
 }
 
 .wrapper {
-    height: 612px;
+    height: 842px;
     width: 275px;
     background-color: black;
-    padding: 200px 100px;
-    background-image: url("./iphone_bgimg.jpeg");
+    padding: 100px 100px;
+    background-image: url("background2.png");
+    filter: grayscale(30%);
     background-size: 100% 100%;
     /* background: transparent url("./iphone_bgimg.jpeg") repeat scroll 50% 0; */
     
 }
 
 .logo{
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
     margin: 0 auto;
-    border: 1px solid #F0FBEB;
 }
 
 .logo > img{
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
 }
 
 .login{
@@ -40,7 +41,8 @@ body{
     border-radius: 50px;
     background-color: white;
     font-size: 20px;
-    color: white;
+    color: gray;
+    box-shadow:3px 3px 10px rgb(143, 99, 123);
 }
 
 .login > input:hover{
@@ -51,6 +53,7 @@ body{
 
 .mid-section{
     margin-bottom: 100px;
+
 }
 
 .remember-me-checkbox{
@@ -67,7 +70,7 @@ body{
 .reset-password{
     vertical-align: top;
     font-size: 15px;
-    margin-left: 60px;
+    margin-left: 10px;
 }
 
 .btn > input{
@@ -79,3 +82,4 @@ body{
     border: 2px solid #E4AFB1;
     border-radius: 10px;
 } 
+

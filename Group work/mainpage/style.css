@@ -1,0 +1,189 @@
+
+body{
+    height: 900px;
+    background-image: url("background2.png");
+    background-size: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+
+#mainbox{
+    /* border: black solid 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#milestine1{
+    margin-top: 30px;
+    background-image: url("milestone0.png");
+    height: 200px;
+    width: 200px;
+}
+.unlock{
+    margin-top: 20px;
+    background-image: url("unlock.png");
+    height: 200px;
+    width: 200px;
+}
+
+.locked{
+    margin-top: 20px;
+    background-image: url("milestone1.png");
+    height: 200px;
+    width: 200px;
+    animation-name: lock;
+    animation-duration: 4s;
+}
+
+@keyframes lock{
+    from {background-image: url("unlock.png")}
+    to {background-image: url("milestone1.png");}
+  }
+
+.level{
+    background-color: rgb(190, 190, 190);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: solid rgb(255, 255, 255) 2px;
+}
+
+.done{
+    background-color: rgb(255, 182, 73);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: solid rgb(255, 255, 255) 2px;
+}
+
+#level3{
+    background-color: rgb(190, 190, 190);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: solid rgb(255, 255, 255) 2px;
+}
+
+#level4{
+    background-color: rgb(190, 190, 190);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: solid rgb(255, 255, 255) 2px;
+}
+
+#level5{
+    background-color: rgb(190, 190, 190);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 20px;
+    border: solid rgb(255, 255, 255) 2px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    background-color: #ffffff;
+    color: white;
+    box-shadow: 0px -3px 10px #5c5c5c;
+    border-radius: 20px 20px 0 0;
+
+}
+
+
+
+#footbox{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 100%;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+#startbutton{
+    position: fixed;
+    border: solid 10px white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 998;
+    background-color: #ffffff;
+    box-shadow: 0px -3px 10px #5c5c5c;
+    background-image: url("start.png");
+    background-size: cover;
+}
+
+.startcard{
+    color: #9a7787;
+    text-align: center;
+    margin-top: -18px;
+    position: fixed;
+    bottom: 0%;
+    left: 41%;
+    z-index: 998;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+
+#profile{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    background-image: url("profile.png");
+    background-size: cover;
+}
+
+#quizsheet{
+    height: 60px;
+    width: 60px;
+    border: none;
+    margin-left: 5%;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url("sheet.png");
+    background-size: cover;
+    
+}
+
+.box{
+    margin-right: 6%;
+    margin-left: 6%;
+    padding: 2%;
+}
+
+.lampstyle{
+    position: relative;
+    left: 48%;
+    top: 30%;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(184, 205, 230);
+    border: solid 2px white;
+    margin-bottom: 20px;
+}
+
+.card{
+    color: #9a7787;
+    text-align: center;
+    margin-top: -10px;
+}
+

@@ -1,0 +1,70 @@
+html,body{
+    height: 812px;
+    width: 375px;
+    background-color: #E4AFB1;
+    margin: 0px;
+    padding: 0px;
+}
+
+#board{
+    position: fixed;
+    height:85%;
+    width: 90%;
+    margin: 5%;
+    margin-top: 12.5%;
+    background-color: #ffffff;
+    color: grey;
+    box-shadow: 0px -3px 10px #5c5c5c;
+    border-radius: 20px;
+    text-justify: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#back{
+    font-size: 25px;
+    position: fixed;
+    left: 44px;
+    top: 60px;
+}
+
+.title{
+    color: rgb(92, 92, 92);
+    font-size: 25px;
+    text-align: center;
+}
+
+.problem{
+    color: rgb(119, 119, 119);
+    font-size: 18px;
+    padding: 16px;
+    text-align: center;
+}
+
+.pic{
+    width: 200px;
+}
+
+.answers{   
+    width: 220px;
+    color: rgb(119, 119, 119);
+    font-size: 15px;
+    padding: 6px 18px 6px 18px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 10px #929292;
+}
+
+.nextbutton{
+    height: 25px;
+    width: 150px;
+    color: rgb(119, 119, 119);
+    font-size: 18px;
+    padding: 6px 20px 6px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 10px #929292;
+}
